@@ -12,14 +12,14 @@ def main():
   realPi = math.pi
 
   #ask user for decimal percision (up to 10)
-  piDidgets = input("How many didgets of pi do you want to go to? (1, 10): ")
+  piDigits = input("How many digits of pi do you want to go to? (1, 10): ")
   start = time.time()
   #calculate pi using the approximation technique
   #Loop until the level of percision is reached
   approxPi = 4/1
   sign = -1
   denom = 3
-  while round(approxPi, int(piDidgets)) != round(realPi, int(piDidgets)):
+  while round(approxPi, int(piDigits)) != round(realPi, int(piDigits)):
     print(approxPi)
     approxPi = approxPi + (sign * 4 / denom)
     sign = sign * -1
